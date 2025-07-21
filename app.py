@@ -18,7 +18,7 @@ st.markdown("""
             background-color: #e6f0ff;
         }
         .stApp {
-            background-color: #e6f0ff;
+            background-color:  #f4f9ff;
         }
         .bot-avatar-center {
             display: flex;
