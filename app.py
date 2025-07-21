@@ -1,13 +1,13 @@
 import streamlit as st
 import base64
 
-# Función para codificar imágenes locales en base64
+# codificar imágenes  en base64
 def get_base64_image(image_path):
     with open(image_path, "rb") as image_file:
         encoded = base64.b64encode(image_file.read()).decode()
     return f"data:image/png;base64,{encoded}"
 
-# Cargar imagen del avatar y del logo
+# Cargar imagenes
 img_bot_base64 = get_base64_image("Simobot.PNG")
 img_logo_base64 = get_base64_image("logo.png")
 
@@ -82,7 +82,7 @@ st.markdown("""
 # Línea decorativa
 st.markdown("<hr style='border: none; height: 4px; background-color: #fab70e;'>", unsafe_allow_html=True)
 
-# Chat embebido responsivo
+# Chat
 st.markdown(f"""
     <div class="chat-container">
         <iframe
@@ -96,7 +96,7 @@ st.markdown(f"""
 # Línea decorativa inferior
 st.markdown("<hr style='border: none; height: 4px; background-color: #fab70e;'>", unsafe_allow_html=True)
 
-# Logo centrado y responsivo
+# Logo 
 st.markdown(f"""
     <div class="responsive-logo">
         <img src="{img_logo_base64}" alt="Logo">
